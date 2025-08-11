@@ -1,0 +1,51 @@
+Khalif Prabowo Santoso - 029
+
+1. Jelaskan apa yang dimaksud dengan NoSQL menggunakan pemahaman yang kalian ketahui!
+--> NoSQL adalah jenis database non-relasional yang dirancang untuk mengelola data bervolume besar. 
+Berbeda dengan database relasional yang mengandalkan skema tabel tetap, NoSQL menawarkan fleksibilitas struktur data, bisa berupa dokumen, key-value, grafik, atau kolom. 
+Ini menjadikannya ideal untuk data tidak terstruktur atau semi-terstruktur, dengan format umum seperti JSON atau BSON.
+
+
+2. Jelaskan kapan harus menggunakan NoSQL dan Relational Database Management System!
+-->
+No SQL:
+- Data tidak terstruktur atau semi-terstruktur (misalnya JSON).
+- Skema data sering berubah atau tidak tetap.
+- Di distribusi ke banyak server
+RDBMS:
+- Data bersifat Structured dan konsisten.
+- Ada relasi antar tabel
+
+3. Sebutkan contoh 2 tools/platform NoSQL selain ElasticSearch beserta keunggulan tools/platform tersebut!
+-->
+MongoDB:
+- Tidak memerlukan skema tetap, cocok untuk data yang terus berubah.
+- Mudah dikembangkan untuk menangani volume data dan traffic besar.
+
+2. Cassandra (Apache Cassandra):
+- Sistem tetap berjalan tanpa henti meski ada kegagalan komponen.
+- Mampu menangani data dan beban kerja yang sangat besar dengan penambahan node.
+
+4. Jelaskan apa yang Anda ketahui dari Airflow menggunakan pemahaman dan bahasa Anda sendiri!
+--> 
+Airflow adalah platform open-source untuk mengatur dan menjadwalkan workflow data. Workflow didefinisikan sebagai rangkaian task yang disebut DAG (Directed Acyclic Graph). 
+Airflow digunakan untuk mengotomatisasi pipeline data seperti ETL, model training, dan batch processing. Juga Airflow Menggunakan Bahasa pemrogramannya Python.
+
+5. Jelaskan apa yang Anda ketahui dari Great Expectations menggunakan pemahaman dan bahasa Anda sendiri!
+--> 
+Great Expectations adalah framework open-source untuk memvalidasi kualitas data. Great Expectations memungkinkan kita untuk mendefinisikan rules terhadap data,
+misalnya: kolom `price` harus diantara min_value=1.0, max_value=1900000.0.
+
+6. Jelaskan apa yang Anda ketahui dari Batch Processing menggunakan pemahaman dan bahasa Anda sendiri (Definisi, Contoh Kasus Penggunaan, Tools, dll)!
+-->
+Definisi:
+Batch processing adalah metode pengolahan data dalam jumlah besar sekaligus dalam satu waktu tertentu, bukan secara real-time.
+Contoh Kasus:
+- Menjalankan ETL (Extract, Transform, Load) dari file CSV besar.
+- Mengolah log sistem dalam jumlah besar.
+Tools:
+- Apache Spark
+- AWS GLue 
+Kelebihan:
+- Efisien untuk data dalam jumlah besar.
+- Bisa dijalankan pada waktu yang tidak sibuk.

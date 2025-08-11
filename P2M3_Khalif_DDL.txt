@@ -1,0 +1,48 @@
+Link Dataset: https://www.kaggle.com/datasets/beridzeg45/watch-prices-dataset 
+
+Query:
+Step 1:
+```
+CREATE TABLE table_m3 (
+	"Id" SERIAL PRIMARY KEY,
+    "Brand" TEXT,
+    "Movement" TEXT,
+    "Case material" TEXT,
+    "Bracelet material" TEXT,
+    "Condition" TEXT,
+    "Scope of delivery" TEXT,
+    "Gender" TEXT,
+    "Price" DOUBLE PRECISION,
+    "Availability" TEXT,
+    "Watches Sold by the Seller" DOUBLE PRECISION
+);
+```
+Step 2:
+----------------------------
+```
+COPY table_m3(
+"Brand", "Movement", "Case material", "Bracelet material", "Condition", 
+"Scope of delivery", "Gender", "Price", "Availability", "Watches Sold by the Seller")
+FROM '/temp/Khalif_Raw.csv'
+DELIMITER ','
+CSV HEADER;
+```
+
+Penjelasan:
+----------------------------
+A. Step 1
+1. Pada Step 1 dilakukan Create Table dengan nama 'table_m3'.
+2. Selanjutnya mendefine nama-nama columns serta type datanya yang sesuai dengan datasetnya.
+3. Tetapi dalam mendefine nama-nama columns, dikarenakan pada dataset belum memiliki 'unique id', maka dilakukan penambahan kolom 'Id' dengan type Data 
+Serial serta menjadikannya 'Primary Key'.
+
+B. Step 2
+1. Pada Step 2 akan dilakukan copy yaitu mengcopy sebuah data untuk dimasukkan kedalam 'table_m3'.
+2. Selanjutanya di define kembali nama-nama columnsnya yang sesuai dengan nama-nama columns yang kita buat saat 'CREATE TABLE'.
+3. selanjutnya kita define path yang sesuai untuk dapat mengcopy datasetnya ('/temp/Khalif_Raw.csv').
+4. lalu define 'DELIMITER' atau pemisah yaitu ',' dikarenakan datanya yang berupa CSV, dimana setiap columnnya dipisahkan oleh koma (,).
+5. define 'CSV HEADER' dikarenakan pada dataset sudah terdapat header(nama columns). Jadi, perintah tersebut untuk menunjukkan bahwa baris pertama dari isi datasetnya adalah 'Header'.
+
+
+
+
