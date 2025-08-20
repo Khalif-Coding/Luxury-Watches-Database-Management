@@ -5,14 +5,14 @@
 ```
 p2-ftds029-hck-m3-Khalif-Coding
 │
-├── /dags                         # DAG scripts
+├── /dags                          # DAG scripts
 │   └── P2M3_Khalif_DAG.py         # ETL pipeline DAG
 │
-├── /data                         # Extracted & processed datasets
+├── /data                          # Extracted & processed datasets
 │   ├── Khalif_Raw.csv             # Raw data extracted from PostgreSQL
 │   └── Data_Clean.csv             # Cleaned dataset for Elasticsearch
 │
-├── /images                       # Visualizations & documentation
+├── /images                        # Visualizations & documentation
 │   ├── 1 Introduction & Objectives.png
 │   ├── 2 Conclusion & Business Recommendation.png
 │   ├── Plot 1 - Horizontal.png
@@ -22,51 +22,49 @@ p2-ftds029-hck-m3-Khalif-Coding
 │   ├── Plot 5 - Area.png
 │   └── Plot 6 - Heatmap.png
 │
-├── /logs                         # Airflow DAG logs
-├── /plugins                      # (empty) placeholder
-├── /postgres_data                # PostgreSQL container data
+├── /logs                           # Airflow DAG logs
+├── /plugins                        # (empty) placeholder
+├── /postgres_data                  # PostgreSQL container data
 │
-├── .env                          # Database configuration
-├── airflow.yaml                  # Docker container configuration
-├── description.md                 # Project description
-├── P2M3_Khalif_Conceptual         # Conceptual Q&A
-├── P2M3_Khalif_DAG_Graph.png      # DAG workflow visualization
-├── P2M3_Khalif_DDL.txt            # SQL schema script
-├── P2M3_Khalif_GX.ipynb           # Great Expectations notebook
-├── P2M3_Khalif_GX_Result.png      # GX validation result
-├── README.md                      # Documentation
+├── .env                            # Database configuration
+├── airflow.yaml                    # Docker container configuration
+├── P2M3_Khalif_DAG_Graph.png       # DAG workflow visualization
+├── P2M3_Khalif_DDL.txt             # SQL schema script
+├── P2M3_Khalif_GX.ipynb            # Great Expectations notebook
+├── P2M3_Khalif_GX_Result.png       # GX validation result
+├── README.md                       # Documentation
 ```
 
 ---
 
 ## 📌 Problem Background
-Pasar jam tangan mewah merupakan industri bernilai miliaran dolar yang sangat bergantung pada **brand equity**, **kualitas produk**, serta **strategi pemasaran dan distribusi** yang presisi.  
+The luxury watch market is a multi-billion-dollar industry that heavily relies on **brand equity**, **product quality**, and precise **marketing and distribution strategies**.  
 
-Namun, perusahaan sering menghadapi tantangan berikut dalam memaksimalkan penjualan dan profitabilitas:
-- Segmentasi konsumen yang kurang optimal  
-- Manajemen stok yang tidak efisien  
-- Minimnya pemanfaatan data penjualan aktual  
+However, companies often face the following challenges in maximizing sales and profitability:
+- Suboptimal consumer segmentation  
+- Inefficient inventory management  
+- Limited utilization of actual sales data  
 
 ---
 
 ## 🎯 Project Output
-- DAG Script untuk proses **ETL**  
-- Visualisasi & analisis dari data hasil ETL  
-- Validasi data menggunakan **Great Expectations**  
+- DAG Script for the **ETL** process  
+- Visualization & analysis from ETL results  
+- Data validation using **Great Expectations**  
 
 ---
 
 ## 📊 Data
-- **Link Dataset:** [Kaggle - Watch Prices Dataset](https://www.kaggle.com/datasets/beridzeg45/watch-prices-dataset)  
-- **Ukuran:** 15.000 rows, 10 columns  
-- **Tipe Data:** 8 object, 2 float  
+- **Dataset Link:** [Kaggle - Watch Prices Dataset](https://www.kaggle.com/datasets/beridzeg45/watch-prices-dataset)  
+- **Size:** 15,000 rows, 10 columns  
+- **Data Types:** 8 object, 2 float  
 
 ---
 
 ## ⚙️ Method
-- ETL Pipeline dengan **Airflow**  
-- Data Validation dengan **Great Expectations**  
-- Visualization menggunakan **Kibana**  
+- ETL Pipeline with **Airflow**  
+- Data Validation using **Great Expectations**  
+- Visualization using **Kibana**  
 
 ---
 
